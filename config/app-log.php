@@ -9,4 +9,9 @@ return [
             'days' => 7,
         ],
     ],
+
+    'except' => [
+      'password',
+      'password_confirmation',
+    ],
 ];
