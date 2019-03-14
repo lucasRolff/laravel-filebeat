@@ -1,6 +1,6 @@
 <?php
 
-namespace Shallowman\Log;
+namespace Lucasrolff\Log;
 
 use Illuminate\Http\Request;
 use Carbon\Carbon;

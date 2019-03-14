@@ -1,5 +1,5 @@
 {
-    "name": "shallowman/laravel-filebeat",
+    "name": "lucasrolff/laravel-filebeat",
     "description": "The middleware for application log with json format and correspond to filebeat log collection",
     "keywords": [
         "laravel",
@@ -12,6 +12,10 @@
         {
             "name": "feron wu",
             "email": "feron.wu@gmail.com"
+        },
+        {
+            "name": "Lucas Rolff",
+            "email": "lucas@lucasrolff.com"
         }
     ],
     "require": {
@@ -20,18 +24,18 @@
     },
     "autoload": {
         "psr-4": {
-            "Shallowman\\Log\\": "src/"
+            "Lucasrolff\\Log\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Shallowman\\Log\\Tests\\": "tests/"
+            "Lucasrolff\\Log\\Tests\\": "tests/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Shallowman\\Log\\ServiceProvider"
+                "Lucasrolff\\Log\\ServiceProvider"
             ]
         }
     },

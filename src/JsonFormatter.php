@@ -1,6 +1,6 @@
 <?php
 
-namespace Shallowman\Log;
+namespace Lucasrolff\Log;
 
 use Monolog\Formatter\JsonFormatter as BaseFormatter;
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace Shallowman\Log;
+namespace Lucasrolff\Log;
 
 use Illuminate\Support\ServiceProvider as BaseServiceProvider;
 

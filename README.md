@@ -11,7 +11,7 @@
 
 The defaults are set in `config/app-log.php`. Copy this file to your own config directory to modify the values. You can publish the config using this command:
 ```sh
-$ php artisan vendor:publish --provider="Shallowman\Log\ServiceProvider"
+$ php artisan vendor:publish --provider="Lucasrolff\Log\ServiceProvider"
 ```
 
 > **Note:** If you want to rewrite the log path please provide a real path.
@@ -22,7 +22,7 @@ return [
         'filebeat' => [
             'driver' => 'daily',
             'path' => env('APP_LOG_PATH', '/application/logs/app.log'),
-            'tap' => [Shallowman\Log\LogFormatter::class],
+            'tap' => [Lucasrolff\Log\LogFormatter::class],
             'days' => 7,
         ],
     ],
@@ -34,6 +34,6 @@ Add the HandleApplicationLog middleware in the $middleware property of app/Http/
 ```php
 protected $middleware = [
     // ...
-    \Shallowman\Log\HandleApplicationLog::class,
+    \Lucasrolff\Log\HandleApplicationLog::class,
 ];
 ```
